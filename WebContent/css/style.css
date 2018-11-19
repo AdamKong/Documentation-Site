@@ -1,0 +1,449 @@
+/*
+ * project name:WebexDocsWeb
+ * description: CSS for the front end UI
+ * @author Adam Kong
+ * @date 21 May 2018
+ * @version 1.0
+ */
+
+/*HTML5 new tags to be compatible with low version of ID*/
+article,aside,footer,header,section,footer,nav,figure,main{
+    display:block;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.header{
+    width:100%;
+    height: 150px;
+    top:0px;
+    left:0px;
+    background-color: #049FD9;
+    position: fixed;
+    z-index: 99;
+}
+
+.header_left {
+    width: 25%;
+    height:150px;
+    float:left;
+}
+
+.header_left img{
+    margin-top: 20px;
+    width: 85px;
+    height: 53px;
+}
+
+#colla_help{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#swj{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header_middle{
+    width: 60%;
+    height: 150px;
+    float:left;
+}
+
+.header_middle nav{
+    margin-top: 73px;
+}
+
+.header_middle ul li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 20px;
+    /*background-color: silver;*/
+    overflow: hidden;
+}
+
+.header_middle a{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.header_right{
+	line-height: 150px;
+    width: 15%;
+    height: 150px;
+    color: #FFFFFF;
+    float:left;
+    background-color: #049FD9;
+}
+
+.header_right img{
+	vertical-align: middle;
+	opacity:0.4;
+}
+
+
+.wrapper{
+    width: 90%;
+    height: auto;
+    border: 1px black dashed;
+    margin: 158px auto 8px auto;
+    overflow-x: hidden;
+}
+
+/*.article_nav{*/
+    /*width: 100%;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*text-align: left;*/
+    /*font-size: 20px;*/
+    /*border-bottom: 1px black dashed;*/
+/*}*/
+
+aside{
+    width: 30%;
+    height: auto;
+    border-right: 1px black dashed;
+    float:left;
+}
+
+.search{
+    margin: 20px;
+    height: 130px;
+    background-color: moccasin;
+}
+
+/*.search form{*/
+    /*border: 0;*/
+/*}*/
+
+.search input[type=text]{
+    width: 92%;
+    height: 30px;
+    border: 1px black dashed;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search select{
+    width: 92%;
+    height: 30px;
+    border: 1px black dashed;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.search input[type=submit]{
+    width: 50%;
+    height: 30px;
+    border: 1px black dashed;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.left_menu{
+    width: 90%;
+    /*height: 2700px;*/
+    margin: 10px auto;
+    background-color: lightskyblue;
+
+}
+
+.left_menu section {
+    display: inline-block;
+    margin: 10px auto 10px auto;
+    /*background-color: cadetblue;*/
+    width: 100%;
+    text-align: left;
+}
+
+.left_menu section .section_header{
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.left_menu section .section_header span:first-child{
+    width: 20px;
+}
+
+.left_menu section .section_header .more{
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    color: moccasin;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+.left_menu section .section_header .more a{
+    color: moccasin;
+}
+
+.left_menu section .section_list{
+    text-align: left;
+    line-height: 30px;
+}
+
+.left_menu section ul li{
+    line-height: 30px;
+    font-size: 16px;
+    text-indent: 30px;
+    border-radius: 10px;
+}
+
+main{
+    width: 68%;
+    height: auto;
+    /*border-left: 1px black dashed;*/
+    float: right;
+    text-align: center;
+}
+
+main span{
+    display: inline-block;
+    margin-top:15px;
+    font-size: 15px;
+}
+
+.subject{
+    margin: 60px 10px 10px 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content{
+     margin: 50px 20px auto 20px;
+     text-align: left;
+     line-height: 30px;
+     font-size: 18px;
+ }
+ 
+.art_remarks{
+	width: 40%;
+	text-align: left;
+	margin: 10px 20px auto 20px;
+	border-top: 1px black dotted;
+}
+
+.art_remarks span{
+	color: green;	
+}
+
+.content p{
+    line-height: 25px;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* -----------------------For "Read All Article" feature------------------------------------ */
+.readall_box {
+    position: relative;
+    z-index: 9999;
+    padding: 0 0 25px;
+    margin-top: -200px;
+    text-align: center; 
+}
+
+.readall_box .read_more_mask {
+    height: 200px;
+/*     background: -moz-linear-gradient(bottom,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    background: -webkit-gradient(linear,0 top,0 bottom,from(rgba(255,255,255,0)),to(#fff));
+    background: -o-linear-gradient(bottom,rgba(255,255,255,0.1),rgba(255,255,255,0)); */
+    
+	background: -moz-linear-gradient(bottom,rgba(238,238,238,0.1),rgba(238,238,238,0));
+    background: -webkit-gradient(linear,0 top,0 bottom,from(rgba(238,238,238,0)),to(#eee));
+    background: -o-linear-gradient(bottom,rgba(238,238,238,0.1),rgba(238,238,238,0));
+}
+
+.read_more_btn{
+    cursor:pointer;
+    font-size: 16px;
+    color: #049FD9;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #049FD9;
+    line-height: 30px;
+    padding:5px 10px;
+}
+
+.read_more_btn:hover{
+    background:#049FD9;
+    color:#fff;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.article_searchresult_epage_main{
+	width: 70%;
+    height: auto;
+    border: 1px black dashed;
+    margin: 200px auto 8px auto;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.article_searchresult_epage_main span{
+    display: inline-block;
+    margin-top:15px;
+    font-size: 15px;
+}
+
+
+
+.list_top{
+    width: 100%;
+    height:100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+
+.article_searchresult_epage_main section{
+    text-align: left;
+    /*border-top: 1px dashed;*/
+    /*border-bottom: 1px dashed;*/
+    margin-bottom: 60px;
+}
+
+.article_searchresult_epage_main section header{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px auto 15px 10px;
+}
+
+.article_searchresult_epage_main section header a:link{
+    color: deepskyblue;
+}
+
+.article_searchresult_epage_main section header a:visited{
+    color: skyblue;
+}
+
+.article_searchresult_epage_main section header a:hover{
+    color: silver;
+}
+
+.article_searchresult_epage_main section header a:active{
+    color: silver;
+}
+
+.article_searchresult_epage_main section .first_para{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+.article_searchresult_epage_main nav{
+	/* background-color: silver; */  
+	width: 90%;
+	height: 32px;
+	line-height: 32px;
+	margin: 20px auto 10px auto;
+}
+
+.article_searchresult_epage_main nav ul{
+	text-align: center;
+}
+
+.article_searchresult_epage_main nav ul li{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+.footer{
+    width: 100%;
+    height:150px;
+    background-color: #049FD9;
+    text-align: center;
+}
+
+/*.footer a:link{*/
+    /*color: gray;*/
+/*}*/
+/*.footer a:active{*/
+    /*color: gray;*/
+/*}*/
+/*.footer a:hover{*/
+    /*color: silver;*/
+/*}*/
+/*.footer a:visited{*/
+    /*color: silver;*/
+/*}*/
+
+.footer .contact_us{
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.footer nav{
+    margin-top: 18px;
+    text-align: center;
+}
+
+.footer nav ul{
+    text-align: center;
+}
+
+.footer nav ul li{
+    display: inline;
+    font-size: 18px;
+    margin: auto 15px;
+}
+
+.footer .rights{
+    display: inline-block;
+    margin-top: 18px;
+}

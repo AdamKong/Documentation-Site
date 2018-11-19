@@ -1,0 +1,526 @@
+/*
+ * project name:WebexDocsWeb
+ * description: CSS for the backend UI
+ * @author Adam Kong
+ * @date 21 May 2018
+ * @version 1.0
+ */
+ 
+ /*HTML5 new tags to be compatible with low version of ID*/
+article,aside,footer,header,section,footer,nav,figure,main{
+    display:block;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.header{
+    width:100%;
+    height: 150px;
+    top:0px;
+    left:0px;
+    background-color: #049FD9;
+    position: fixed;
+    z-index: 99;
+}
+
+.header_left {
+    width: 25%;
+    height:150px;
+    float:left;
+}
+
+.header_left img{
+    margin-top: 20px;
+    width: 85px;
+    height: 53px;
+}
+
+#colla_help{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#swj{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/*login page*/
+
+.header_middle{
+    width: 55%;
+    height: 150px;
+    line-height: 150px;
+    float:left;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.header_right{
+    width: 20%;
+    height: 150px;
+    line-height: 150px;
+    float:left;
+    font-size: 20px;
+    color: moccasin;
+}
+
+.header_right a:link{
+	color: moccasin;
+}
+.header_right a:visited{
+	color: moccasin;
+}
+.header_right a:hover{
+	color: silver;
+}
+.header_right a:active{
+	color: silver;
+}
+
+.login_window{
+    width: 35%;
+    /*height: 270px;*/
+    height: auto;
+    border: 1px black dashed;
+    /*margin: 158px auto 8px auto;*/
+    margin: 230px auto 8px auto;
+    overflow: auto;
+    background-color: moccasin;
+}
+
+.login_window header{
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+.login_window label{
+    height:auto;
+	font-size:18px;
+    color:red;
+	margin:10px auto;
+	display:inline-block;
+}
+
+.login_window form{
+    /*margin-top:10px;*/
+    text-align: left;
+    padding-left: 50px;
+}
+
+.login_window form input{
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login_window form label{
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    color: silver;
+}
+
+
+.login_window form input[type=submit]{
+    width: 20%;
+    height: 25px;
+    border: 1px black solid;
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login_window form input[name=validationCode]{
+    width: 100px;
+    height: 25px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 7px;
+    vertical-align: middle;
+}
+
+.login_window form img{
+	vertical-align: middle;
+}
+
+/*admin pages*/
+
+.wrapper{
+    width: 90%;
+    /*height: 600px;*/
+    border: 1px black dashed;
+    margin: 158px auto 8px auto;
+    overflow: auto;
+}
+
+aside{
+    width: 25%;
+    height: auto;
+    border-right: 1px black dashed;
+    float:left;
+}
+
+aside header{
+    margin: 50px 20px 20px 20px;
+    height: 40px;
+    background-color: moccasin;
+    line-height: 40px;
+}
+
+aside nav{
+    margin: 20px 20px 30px 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    background-color: moccasin;
+    line-height: 30px;
+}
+
+.admin_only{
+	border: 1px solid;
+}
+
+aside nav ul{
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+aside nav span{
+    font-size: 16px;
+    color: brown;
+}
+
+aside a:link{
+    color: teal;
+}
+
+aside a:visited{
+    color: teal;
+}
+
+aside a:hover{
+    color: silver;
+}
+
+aside a:active{
+    color: silver;
+}
+
+
+main{
+    width: 73%;
+    height: auto;
+    float: right;
+    text-align: center;
+    /*background-color: cornsilk;*/
+}
+
+main header{
+    margin: 50px 20px 30px 0px;
+    font-size: 22px;
+    background-color: moccasin;
+}
+
+main .web_info {
+	width:90%;
+	font-size: 18px;
+    background-color: silver;
+    margin-top: 100px;
+    border: 1px dashed;
+}
+
+main .web_info tr td{
+	text-align: left;
+	height: 60px;
+	padding-left: 20px;
+}
+
+main .web_info tr td:first-child {
+	width: 30%;
+}
+
+main form{
+    /*border: 1px dashed;*/
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 50px;
+}
+
+main form p{
+    margin-top: 20px;
+}
+
+main form p span{
+    display: inline-block;
+    width: 70px;
+}
+
+main form input{
+    border-bottom: 1px dashed;
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    text-align: left;
+}
+
+main form select{
+    width: 150px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 25px;
+}
+
+main form textarea{
+    display: block;
+    width: 90%;
+    height:300px;
+    margin: 10px auto 10px 0;
+    border: 1px black dashed;
+}
+
+main form .form_button{
+    text-align: center;
+}
+
+main form .form_button input{
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: auto 15px;
+}
+
+.backend_pagination {
+	/* background-color: silver; */  
+	width: 90%;
+	height: 32px;
+	line-height: 32px;
+	margin: 20px auto 10px auto;
+}
+
+.backend_pagination ul{
+	text-align: center;
+}
+
+.backend_pagination ul li{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+main form .cat_name{
+	width: 300px;
+}
+
+main form .cat_des{
+	width: 370px;
+	height: 150px;
+}
+
+main form .cat_form_button{
+	width: 370px;
+	text-align: center;
+}
+
+main form .cat_form_button input{
+    border: 1px solid;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: auto 15px; 
+}
+
+main .adm_form p{
+	margin-left: 150px;
+}
+
+main .adm_form p span{
+	display: inline-block;
+    width: 500px;
+}
+
+.adm_general_input{
+	border: 1px solid;
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+
+.caution{
+	color: red;
+}
+
+main .adm_form p input[type=radio]{
+	margin-left: 100px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+main .adm_form .form_button{
+	margin-bottom: 100px;
+	display: inline-block;
+}
+
+.adm_des{	
+	width: 370px;
+	height: 150px;
+}
+
+main table{
+    width: 90%;
+    margin: 20px auto 40px auto;
+}
+
+main table tr th{
+    text-align: center;
+    height: 40px;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+}
+
+main table tr th:first-child{
+    width: 55%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+main table tr td{
+    text-align: center;
+    height: 40px;
+    border-top: 1px dashed;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+}
+
+main table tr td:first-child{
+    width: 55%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+main .adminTable tr th:first-child{
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+main .adminTable tr td:first-child{
+    width: 20%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.acc_details{	
+	width: 70%;
+	border: 1px solid;
+	font-size: 16px;
+}
+
+.acc_details tr{
+	line-height: 40px;
+	border: 1px solid;
+}
+
+.acc_details tr td{
+	text-align: left;
+	padding-left: 30px;
+	border: 1px solid;
+}
+	
+.acc_details tr td:first-child{
+	width: 33%;
+}
+
+.change_acc_info{
+	display: inline-block;
+	background-color: moccasin;
+	font-weight: normal;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.change_acc_info a{
+    text-decoration: none;
+}
+
+.change_acc_info a:link{
+	color: brown;
+}
+
+.change_acc_info a:visited {
+    color: brown;
+}
+.change_acc_info a:hover{
+    color: brown;
+    text-decoration: none;
+}
+.change_acc_info a:active{
+    color: brown;
+}
+
+.permanentDel{
+    color: red;
+}
+
+.superadmin{
+    color: #049FD9;
+}
+
+.suberadmin{
+    color: #faac28;
+}
